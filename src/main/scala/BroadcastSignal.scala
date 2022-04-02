@@ -12,18 +12,18 @@ import akka.util.Timeout
 import java.net._
 
 object BroadcastSignal {
-    import CheckerAlive._
+    import Controller._
     sealed trait BeatMessage
     case class Assert_Musicien(id: Int) extends BeatMessage
     case class Assert_Chef(id: Int) extends BeatMessage
-    case class Check() extends Tick
+    case class Check() extends Control
     case class Start_Verification() extends BeatMessage
     case class Changement_Chef1(idM: Int)
 }
 
 class BroadcastSignal(val id: Int) extends Actor {
     import BroadcastSignal._
-    import CheckerAlive._
+    import Controller._
 
     val time: Int = 1000
     val pere = context.parent

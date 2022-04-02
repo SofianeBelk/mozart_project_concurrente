@@ -25,14 +25,14 @@ class Musicien(val id: Int, val terminaux: List[Terminal], val systemActor: Acto
     import ProviderActor._
     import PlayerActor._
     import DataBaseActor._
-    import CheckerAlive._
+    import Controller._
     import ElectionChef._
     import BroadcastSignal._
 
     // Les differents acteurs du systeme
     val electionChef = context.actorOf(Props(new ElectionChef(this.id, terminaux)), name = "electionChef")
     val beatActor = context.actorOf(Props(new BroadcastSignal(this.id)), name = "BroadcastSignal")
-    val checkerAlive = context.actorOf(Props(new CheckerAlive(this.id, terminaux, electionChef)), name = "checkerAlive")
+    val checkerAlive = context.actorOf(Props(new Controller(this.id, terminaux, electionChef)), name = "checkerAlive")
     val player = context.actorOf(Props[PlayerActor], "playerActor")
     val provider = context.actorOf(Props(new ProviderActor (self)), "provider")
     
