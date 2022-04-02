@@ -1,0 +1,38 @@
+[0m[[0m[31merror[0m] [0m[0morg.jboss.netty.channel.ChannelException: Failed to bind to: /127.0.0.1:1000[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.remote.transport.netty.NettyTransport$$anonfun$listen$1.apply(NettyTransport.scala:464)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.remote.transport.netty.NettyTransport$$anonfun$listen$1.apply(NettyTransport.scala:460)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Success$$anonfun$map$1.apply(Try.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:192)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Success.map(Try.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.net.BindException: Permission denied[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.Net.bind0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.Net.bind(Net.java:555)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:833)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) org.jboss.netty.channel.ChannelException: Failed to bind to: /127.0.0.1:1000[0m
