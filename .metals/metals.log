@@ -210,3 +210,247 @@ Exception in thread "pool-3-thread-2" java.lang.InterruptedException
 2022.04.03 00:57:01 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/projet_code/src/main/scala/Controller.scala
 2022.04.03 00:57:43 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/projet_code/src/main/scala/Controller.scala
 2022.04.03 00:57:49 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/projet_code/src/main/scala/Controller.scala
+2022.04.04 15:50:05 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/.metals/lsp.trace.json or /Users/sofianebelkhir/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.04.04 15:50:06 INFO  logging to file /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/.metals/metals.log
+2022.04.04 15:50:06 INFO  Started: Metals version 0.11.2 in workspace '/Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente' for client Visual Studio Code 1.66.0.
+2022.04.04 15:50:06 INFO  Parse release: 11.0.12
+2022.04.04 15:50:11 INFO  time: initialize in 5.51s
+2022.04.04 15:50:15 WARN  Build server is not auto-connectable.
+2022.04.04 15:53:11 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.04 15:53:19 INFO  no build target found for /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala. Using presentation compiler with project's scala-library version: 3.1.1
+2022.04.04 15:53:22 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 15:53:23 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.04 15:53:25 INFO  time: code lens generation in 1.3s
+2022.04.04 15:53:25 INFO  time: code lens generation in 11s
+2022.04.04 15:53:25 INFO  time: code lens generation in 2.32s
+2022.04.04 15:53:42 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 15:54:13 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 15:54:15 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 15:55:30 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 15:57:59 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+avr. 04, 2022 4:00:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 219
+2022.04.04 16:00:40 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:01:10 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:04:04 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+avr. 04, 2022 4:07:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 424
+avr. 04, 2022 4:07:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 435
+2022.04.04 16:09:13 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:10:35 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:11:21 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:11:59 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.04 16:12:55 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.04 16:13:12 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:14:22 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:14:34 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:15:34 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.04 16:16:41 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.04 16:18:48 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:19:04 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:19:34 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+avr. 04, 2022 4:21:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1302
+2022.04.04 16:21:30 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.04 16:22:10 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:22:52 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+avr. 04, 2022 4:22:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1433
+2022.04.04 16:23:01 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+2022.04.04 16:23:55 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:24:01 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.04 16:24:05 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:24:17 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:24:46 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:25:05 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:25:23 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:25:35 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:25:42 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:28:05 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.04 16:30:22 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.04 16:30:46 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 08:50:11 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 08:52:24 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+avr. 05, 2022 8:52:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2128
+2022.04.05 08:56:47 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 09:00:03 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:01:29 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:02:23 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:08:07 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+2022.04.05 09:09:58 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 09:10:41 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 09:12:34 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:13:22 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:17:54 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:18:05 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:18:38 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:21:50 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:21:59 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:24:05 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:26:05 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 09:27:21 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+avr. 05, 2022 9:35:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3270
+avr. 05, 2022 9:36:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3404
+2022.04.05 09:36:55 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 09:37:05 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 09:37:19 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 09:38:22 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 09:38:52 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 09:39:09 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 09:39:30 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 10:00:09 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 10:01:08 INFO  shutting down Metals
+2022.04.05 10:01:08 ERROR Unexpected error initializing server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2022.04.05 10:01:25 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/.metals/lsp.trace.json or /Users/sofianebelkhir/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.04.05 10:01:25 INFO  logging to file /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/.metals/metals.log
+2022.04.05 10:01:25 INFO  Started: Metals version 0.11.2 in workspace '/Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente' for client Visual Studio Code 1.66.0.
+2022.04.05 10:01:25 INFO  Parse release: 11.0.12
+2022.04.05 10:01:31 INFO  time: initialize in 5.57s
+2022.04.05 10:01:32 WARN  Build server is not auto-connectable.
+2022.04.05 10:01:32 INFO  skipping build import with status 'Requested'
+2022.04.05 10:04:44 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 10:04:51 INFO  no build target found for /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala. Using presentation compiler with project's scala-library version: 3.1.1
+2022.04.05 10:04:51 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 10:04:55 INFO  time: code lens generation in 3.58s
+2022.04.05 10:04:55 INFO  time: code lens generation in 3.58s
+2022.04.05 10:04:55 INFO  time: code lens generation in 3.58s
+2022.04.05 10:04:55 INFO  time: code lens generation in 3.58s
+2022.04.05 10:04:55 INFO  time: code lens generation in 9.21s
+2022.04.05 10:04:55 INFO  time: code lens generation in 3.55s
+2022.04.05 10:04:55 INFO  time: code lens generation in 9.21s
+2022.04.05 10:04:55 INFO  time: code lens generation in 3.55s
+2022.04.05 10:13:44 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+avr. 05, 2022 10:13:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 24
+2022.04.05 11:42:00 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+avr. 05, 2022 11:42:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 54
+2022.04.05 11:42:26 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+2022.04.05 11:44:22 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Database.scala
+avr. 05, 2022 11:44:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 127
+avr. 05, 2022 11:44:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 132
+2022.04.05 11:44:42 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+2022.04.05 11:45:07 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+2022.04.05 11:45:16 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+2022.04.05 11:45:20 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+2022.04.05 11:45:20 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+2022.04.05 11:46:59 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/BroadcastSignal.scala
+avr. 05, 2022 11:47:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 425
+2022.04.05 11:47:20 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+avr. 05, 2022 11:47:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 470
+2022.04.05 11:47:23 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 11:47:26 INFO  time: code lens generation in 1.08s
+2022.04.05 11:47:26 INFO  time: code lens generation in 2.23s
+2022.04.05 11:47:26 INFO  time: code lens generation in 1.46s
+2022.04.05 11:47:26 INFO  time: code lens generation in 2.24s
+2022.04.05 11:47:26 INFO  time: code lens generation in 1.48s
+2022.04.05 11:47:26 INFO  time: code lens generation in 1.08s
+2022.04.05 11:47:34 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 11:47:36 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 11:48:37 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 11:48:41 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 11:48:47 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/DisplayActor.scala
+2022.04.05 11:48:49 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Database.scala
+2022.04.05 11:49:10 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 11:49:52 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 11:49:55 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 11:50:42 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 11:50:50 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+avr. 05, 2022 11:51:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 798
+2022.04.05 11:51:37 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 11:52:06 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/DisplayActor.scala
+2022.04.05 11:52:07 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/DisplayActor.scala
+2022.04.05 11:52:35 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 11:53:38 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 11:55:13 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 11:56:19 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 11:56:31 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 11:59:48 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 12:01:35 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+2022.04.05 12:02:31 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Provider.scala
+2022.04.05 12:02:37 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Provider.scala
+2022.04.05 12:02:47 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Provider.scala
+2022.04.05 12:04:17 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Chef_orchestre.scala
+avr. 05, 2022 12:05:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1180
+avr. 05, 2022 12:05:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1255
+2022.04.05 12:05:33 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Provider.scala
+2022.04.05 12:05:38 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:06:44 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:07:49 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:08:13 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:10:23 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:11:32 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:11:53 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+avr. 05, 2022 12:12:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1704
+2022.04.05 12:13:11 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:14:05 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+avr. 05, 2022 12:15:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1894
+2022.04.05 12:15:24 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 12:16:48 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 12:16:54 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 12:17:34 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 12:17:34 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 12:18:15 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 12:18:38 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+avr. 05, 2022 12:19:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2079
+2022.04.05 12:19:43 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+2022.04.05 12:19:46 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Musicien.scala
+avr. 05, 2022 12:21:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2285
+2022.04.05 12:21:10 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:21:13 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:21:33 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:21:33 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:23:38 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Projet.scala
+2022.04.05 12:23:49 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Provider.scala
+avr. 05, 2022 12:25:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2536
+avr. 05, 2022 12:25:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2557
+2022.04.05 12:25:21 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Provider.scala
+2022.04.05 12:25:23 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Provider.scala
+avr. 05, 2022 12:26:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2643
+2022.04.05 12:26:53 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:27:49 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:27:53 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:27:58 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:31:12 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:31:21 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:31:37 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:32:04 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:32:11 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:32:12 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:32:40 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:32:43 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:33:48 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:33:59 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:34:07 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:37:59 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala
+2022.04.05 12:40:33 WARN  no build target for: /Users/sofianebelkhir/Documents/PPC/mozart_project_concurrente/src/main/scala/Controller.scala

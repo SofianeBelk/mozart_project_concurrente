@@ -68,6 +68,7 @@ class Musicien(val id: Int, val terminaux: List[Terminal], val systemActor: Acto
 
         case Manage(affectation) => {
             des = lancement
+            
             println("Le musicien " + affectation+" a changé de morceaux")
 
             if(id == affectation){self ! Play(des)}
@@ -78,21 +79,22 @@ class Musicien(val id: Int, val terminaux: List[Terminal], val systemActor: Acto
             } 
         }
 
-        case Changement_Chef(nodeId) => {
-            beatActor ! Changement_Chef1(nodeId)
-            checkerAlive ! Changement_Chef2(nodeId)
-            electionChef ! LeaderElectionChanged(nodeId)
+        case Changement_Chef(musicienId) => {
+           // MusicienID ==> L'id du prochain chef 
+            beatActor ! Changement_Chef1(musicienId)
+            checkerAlive ! Changement_Chef2(musicienId)
+            electionChef ! ChefElectionChanged(musicienId)
         }
 
-        case Assert_Chef(nodeId) => {
-            self ! IsAlive_Chef(nodeId)
-            self ! Changement_Chef(nodeId)
-            if(id == nodeId) { ToutLesMusiciens.foreach(node => {node ! Assert_Chef(nodeId)})}
+        case Assert_Chef(musicienId) => {
+            self ! IsAlive_Chef(musicienId)
+            self ! Changement_Chef(musicienId)
+            if(id == musicienId) { ToutLesMusiciens.foreach(node => {node ! Assert_Chef(musicienId)})}
         }
 
-        case Assert_Musicien(nodeId) => {
-            self ! IsAlive(nodeId)
-            ToutLesMusiciens.foreach(node => {node ! IsAlive(nodeId)})
+        case Assert_Musicien(musicienId) => {
+            self ! IsAlive(musicienId)
+            ToutLesMusiciens.foreach(node => {node ! IsAlive(musicienId)})
         }
 
         case Measure (chordlist)   => {player ! Measure (chordlist)}
@@ -100,7 +102,7 @@ class Musicien(val id: Int, val terminaux: List[Terminal], val systemActor: Acto
         case IsAlive_Chef(id) => { checkerAlive !IsAliveCheckerLeader(id)}
         case Play(num) => {provider ! GetMeasure (num)}
         case Finish() => {
-            print("_________ Fin _______  ")
+            print("_________ Fin _________")
             self ! PoisonPill
         }
         

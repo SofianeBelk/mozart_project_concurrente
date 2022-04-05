@@ -30,7 +30,7 @@ class Controller(val id: Int, val terminaux: List[Terminal], electionActor: Acto
     var listDates = scala.collection.mutable.Map[Int, Date]()
    
     var chef: Int = -1
-    var timer: Int = 10
+    var timer: Int = 20
     var Actif: Boolean = false
     var Inactif: Boolean = false
 
@@ -44,9 +44,12 @@ class Controller(val id: Int, val terminaux: List[Terminal], electionActor: Acto
     /////////////////////////////////////////////////////////////////////////////////////////////OK
 
         case Active_Musician(idM) => {
+
             if (activeM.contains(idM)) listDates(idM) = new Date(new Date().getTime + time)
             else {
-                activeM = idM :: activeM 
+                if(chef != idM){
+                    activeM = idM :: activeM 
+                }
                 println("Liste des musiciens actifs " + activeM + " }")
                 listDates = listDates + (idM -> new Date(new Date().getTime + time))
             }
@@ -58,7 +61,6 @@ class Controller(val id: Int, val terminaux: List[Terminal], electionActor: Acto
         case Maj_Musicien => {
             val scheduler = context.system.scheduler
             scheduler.schedule(3000 milliseconds, 1000 milliseconds) {
-
                 if (id == chef && !Inactif ) {
                     if(activeM.length == 1) {
                         Actif = false
@@ -84,12 +86,20 @@ class Controller(val id: Int, val terminaux: List[Terminal], electionActor: Acto
 
             scheduler.schedule(time milliseconds, time milliseconds) {
                 val actualDate = new Date()
-                if(Inactif) self ! PoisonPill
+                if(Inactif){
+                    self ! PoisonPill
+                } 
                 if (chef != tmp) tmp = chef
 
-                if(Actif && !Inactif)
-                    pere ! Manage(activeM(rand.nextInt(activeM.length)))
-                
+                if(Actif && !Inactif){
+                    var affectation: Int = activeM(rand.nextInt(activeM.length))
+                    // println("le chef est "+chef)
+                    while(affectation == chef)
+                        affectation = activeM(rand.nextInt(activeM.length))
+                    // println("affectation "+affectation)
+                    pere ! Manage(affectation)
+                }
+               
                 
                 for((idM, date) <- listDates) {
                     if (date.before(actualDate)) {
@@ -102,7 +112,9 @@ class Controller(val id: Int, val terminaux: List[Terminal], electionActor: Acto
                     }
                 }
             }
+            activeM = activeM.filter(_!=chef)
         }
+
 
         case Changement_Chef2(idM) => {chef = idM}
         case IsAliveCheckerLeader(idM) => {self ! Active_Musician(idM)}

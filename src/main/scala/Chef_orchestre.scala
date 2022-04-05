@@ -4,21 +4,21 @@ import akka.actor._
 
 object ElectionChef {
     abstract class Musicien_Statut
-    case class Passive() extends Musicien_Statut
-    case class Candidate() extends Musicien_Statut
+    case class Not_Chef() extends Musicien_Statut
+    case class CandidatChef() extends Musicien_Statut
     case class Dummy() extends Musicien_Statut
-    case class Waiting() extends Musicien_Statut
-    case class Leader() extends Musicien_Statut
+    case class FileAttente() extends Musicien_Statut
+    case class Chef() extends Musicien_Statut
 
-    abstract class LeaderAlgoMessage
-    case class Initiate() extends LeaderAlgoMessage
-    case class ALG(list : List[Int], init: Int) extends LeaderAlgoMessage
-    case class AVS(list: List[Int], j: Int) extends LeaderAlgoMessage
-    case class AVSRSP(list: List[Int], k: Int) extends LeaderAlgoMessage
-    case class StartElection() extends LeaderAlgoMessage
-    case class Changement_Chef(id: Int) extends LeaderAlgoMessage
-    case class Start() extends LeaderAlgoMessage
-    case class LeaderElectionChanged(id:Int) extends LeaderAlgoMessage
+    abstract class ChefAlgoMessage
+    case class Initiate() extends ChefAlgoMessage
+    case class Premier_Barrage(list : List[Int], init: Int) extends ChefAlgoMessage
+    case class Deuxieme_Barrage(list: List[Int], j: Int) extends ChefAlgoMessage
+    case class Troisieme_Barrage(list: List[Int], k: Int) extends ChefAlgoMessage
+    case class StartElection() extends ChefAlgoMessage
+    case class Changement_Chef(id: Int) extends ChefAlgoMessage
+    case class Start() extends ChefAlgoMessage
+    case class ChefElectionChanged(id:Int) extends ChefAlgoMessage
 
 }
 
@@ -30,130 +30,131 @@ case class StartWithNodeList(list: List[Int])
 class ElectionChef(val id: Int, val terminaux: List[Terminal]) extends Actor {
     import  ElectionChef._
     
-    val father = context.parent
-    var nodesAlive: List[Int] = List(id)
+    val pere = context.parent
+    var CurrentMusiciens: List[Int] = List(id)
 
-    var status: Musicien_Statut = new Passive
+    var status: Musicien_Statut = new Not_Chef
     var successeur = -1
     var predecesseur = -1
-    var electionActorNeigh: ActorSelection = null
+    var NeighborSearch: ActorSelection = null
 
 
     def get_actor_selection(n:Int):ActorSelection = {
-        electionActorNeigh = context.actorSelection("akka.tcp://MozartSystem" +  terminaux(n).id + "@" +  terminaux(n).ip + ":" +  terminaux(n).port + "/user/Musicien/electionChef")
-        return electionActorNeigh            
+        NeighborSearch = context.actorSelection("akka.tcp://MozartSystem" +  terminaux(n).id + "@" +  terminaux(n).ip + ":" +  terminaux(n).port + "/user/Musicien/electionChef")
+        return NeighborSearch            
     }
 
-
-
-    
     def receive: PartialFunction[Any, Unit] = {
 
-        case LeaderElectionChanged(nodeId) =>{
-            if(nodeId!=id){
-                status = new Passive
+        case ChefElectionChanged(idMusicien) =>{
+            // je ne suis pas le prochain chef
+            if(idMusicien!=id){
+                status = new Not_Chef
                 predecesseur = -1
                 successeur = -1
-
             }
         }
 
         case StartWithNodeList(list) => {
-            if (list.isEmpty) {
-                this.nodesAlive = this.nodesAlive ::: List(id)
+            if (!list.isEmpty) {
+                this.CurrentMusiciens = list
             }
             else {
-                this.nodesAlive = list
+                this.CurrentMusiciens = this.CurrentMusiciens ::: List(id)
             }
-            if(this.nodesAlive.size == 1){
-                status = new Leader
-                father ! Changement_Chef(id)
+            if(this.CurrentMusiciens.size == 1){
+                status = new Chef
+                pere ! Changement_Chef(id)
             }
             else{
-                status = new Candidate
+                status = new CandidatChef
                 self ! Initiate
             }
         }
 
         case Initiate => {
-          
-            
             println("Suffrage d'un nouveau BOSS")
-            status = new Candidate
+
+            //changement de mon statut
+            status = new CandidatChef
             predecesseur = -1
             successeur = -1
-            
-
-            var voisin = (nodesAlive.indexOf(id) + 1) % nodesAlive.size
-            
-            electionActorNeigh = get_actor_selection(nodesAlive(voisin))
-            electionActorNeigh ! ALG(nodesAlive, id)
+        
+            var voisin = (CurrentMusiciens.indexOf(id) + 1) % CurrentMusiciens.size
+        
+            NeighborSearch = get_actor_selection(CurrentMusiciens(voisin))
+            NeighborSearch ! Premier_Barrage(CurrentMusiciens, id)
 
         }
 
-        case ALG(list, init) => {
-            nodesAlive = list
-            if (status.isInstanceOf[Passive]) {
-                status = new Dummy
-                val neigh = (list.indexOf(id) + 1) % list.size
-                electionActorNeigh = get_actor_selection(nodesAlive(neigh))
-                electionActorNeigh ! ALG(list, init)
-            }
-            if (status.isInstanceOf[Candidate]) {
+        case Premier_Barrage(list, init) => {
+            CurrentMusiciens = list
+            if (status.isInstanceOf[CandidatChef]) {
+                // init ==> l'id du dernier chef d'orchestre
                 predecesseur = init
                 if (id > init) {
                     if (successeur == -1) {
-                        status = new Waiting
-                        electionActorNeigh = get_actor_selection(init)
-                        electionActorNeigh ! AVS(list, id)
+                        status = new FileAttente
+                        NeighborSearch = get_actor_selection(init)
+                        NeighborSearch ! Deuxieme_Barrage(list, id)
                     } 
                     else {
-                        electionActorNeigh = get_actor_selection(successeur)
-                        electionActorNeigh ! AVSRSP(list, predecesseur)
+                        NeighborSearch = get_actor_selection(successeur)
+                        NeighborSearch ! Troisieme_Barrage(list, predecesseur)
                         status = new Dummy
                     }
                 }
                 if (init == id) {
-                    status = new Leader
-                    father ! Changement_Chef(id)
+                    status = new Chef
+                    pere ! Changement_Chef(id)
                 }
             }
+
+            if (status.isInstanceOf[Not_Chef]) {
+                status = new Dummy
+                val neigh = (list.indexOf(id) + 1) % list.size
+                NeighborSearch = get_actor_selection(CurrentMusiciens(neigh))
+                NeighborSearch ! Premier_Barrage(list, init)
+            }
+           
         }
 
-        case AVS(list, j) => {
-            nodesAlive = list
-            if (status.isInstanceOf[Candidate]) {
+        case Deuxieme_Barrage(list, j) => {
+            CurrentMusiciens = list
+
+            if (status.isInstanceOf[FileAttente]) successeur = j
+
+
+            if (status.isInstanceOf[CandidatChef]) {
                 if (predecesseur == -1) successeur = j
                 else {
-                    electionActorNeigh = get_actor_selection(j)
-                    electionActorNeigh ! AVSRSP(list, predecesseur)
+                    NeighborSearch = get_actor_selection(j)
+                    NeighborSearch ! Troisieme_Barrage(list, predecesseur)
                     status = new Dummy
                 }
             }
-            if (status.isInstanceOf[Waiting]) successeur = j
+           
         }
 
-        case AVSRSP(list, k) => {
-            //father ! Message("Dans AVSRSP "+id)
-            nodesAlive = list
-            if (status.isInstanceOf[Waiting]) {
+        case Troisieme_Barrage(list, k) => {
+            CurrentMusiciens = list
+            if (status.isInstanceOf[FileAttente]) {
                 if (id == k) {
-                    //father ! Message("elu dans AVSRSP")
-                    status = new Leader
-                    father ! Changement_Chef(id)
+                    status = new Chef
+                    pere ! Changement_Chef(id)
                 }
                 else {
                     predecesseur = k
                     if(successeur == -1){
                         if (k < id) {
-                            electionActorNeigh = get_actor_selection(k)
-                            status = new Waiting
-                            electionActorNeigh ! AVS(list, k)
+                            NeighborSearch = get_actor_selection(k)
+                            status = new FileAttente
+                            NeighborSearch ! Deuxieme_Barrage(list, k)
                         }
                     } else {
                         status = new Dummy
-                        electionActorNeigh =get_actor_selection(successeur)
-                        electionActorNeigh ! AVSRSP(list, k)
+                        NeighborSearch =get_actor_selection(successeur)
+                        NeighborSearch ! Troisieme_Barrage(list, k)
                     }
                 }
             }

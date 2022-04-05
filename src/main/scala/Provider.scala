@@ -15,6 +15,8 @@ object ProviderActor {
         val database = context.actorOf(Props[DataBaseActor], "database")
         def receive = {
             case GetMeasure(res) => {
+                println("Joue la note du résultat du dés : " +res)
+
                 if(cpt < 8){
                     val maListe = partie1(res-2)   
                     database ! GetMeasure(maListe(cpt)-1)             
