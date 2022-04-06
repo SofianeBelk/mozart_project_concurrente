@@ -8,7 +8,10 @@
 - BELKHIR Sofiane
 - KHEDDAR Amine
 
+## Question 1 :
+    le schéma se trouve dans le ficher Schema.pdf.
 
+## Question 2
 
 Au début, on a choisi de mettre le musicien 0 comme chef d'orchestre.
 
